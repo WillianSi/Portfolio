@@ -10,6 +10,8 @@ import image9 from "../assets/image9.png";
 import image10 from "../assets/image10.png";
 import image11 from "../assets/image11.png";
 import image12 from "../assets/image12.png";
+import image13 from "../assets/image13.png";
+
 
 function Portfolio() {
   const projects = [
@@ -84,6 +86,12 @@ function Portfolio() {
       description: "Aplicativo React para envio anônimo de denúncias internas. Usuários podem registrar uma denúncia e recebem um login/senha gerados automaticamente para acompanhar o andamento sem revelar identidade.",
       image: image12,
       link: "https://canal-de-denucia.vercel.app/",
+    },
+    {
+      title: "Escolachek (Chamada Escolar)",
+      description: "Aplicativo React integrado ao Firebase para controle de chamadas escolares. Permite marcar presença de alunos, gerar relatórios e acompanhar frequência. Acesso via login admin (ex.: user@gmail.com / senha: 123456).",
+      image: image13,
+      link: "https://escola-check.vercel.app/",
     },
   ];
 

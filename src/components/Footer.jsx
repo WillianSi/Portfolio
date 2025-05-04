@@ -9,13 +9,7 @@ function Footer() {
           {/* Redes sociais */}
           <div className="flex gap-6">
             <button
-              onClick={() => openInNewTab('https://www.facebook.com')}
-              className="text-gray-400 hover:text-green-400 transition-colors duration-300 text-sm"
-            >
-              Facebook
-            </button>
-            <button
-              onClick={() => openInNewTab('https://www.instagram.com/willian_silvestre7/')}
+              onClick={() => openInNewTab('https://www.instagram.com/willian.silvestre._/')}
               className="text-gray-400 hover:text-green-400 transition-colors duration-300 text-sm"
             >
               Instagram
