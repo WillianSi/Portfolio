@@ -89,7 +89,7 @@ function Portfolio() {
     },
     {
       title: "Escolachek (Chamada Escolar)",
-      description: "Aplicativo React integrado ao Firebase para controle de chamadas escolares. Permite marcar presença de alunos, gerar relatórios e acompanhar frequência. Acesso via login admin (ex.: user@gmail.com / senha: 123456).",
+      description: "Aplicativo React integrado ao Firebase para controle de chamadas escolares. Permite marcar presença de alunos, gerar relatórios e acompanhar frequência. Acesso via login simples (ex.: user@gmail.com / senha: 123456).",
       image: image13,
       link: "https://escola-check.vercel.app/",
     },
