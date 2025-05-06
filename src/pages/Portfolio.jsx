@@ -11,7 +11,7 @@ import image10 from "../assets/image10.png";
 import image11 from "../assets/image11.png";
 import image12 from "../assets/image12.png";
 import image13 from "../assets/image13.png";
-
+import image14 from "../assets/image14.png";
 
 function Portfolio() {
   const projects = [
@@ -92,6 +92,12 @@ function Portfolio() {
       description: "Aplicativo React integrado ao Firebase para controle de chamadas escolares. Permite marcar presença de alunos, gerar relatórios e acompanhar frequência. Acesso via login simples (ex.: user@gmail.com / senha: 123456).",
       image: image13,
       link: "https://escola-check.vercel.app/",
+    },
+    {
+      title: "RuralGest (Gestão Rural)",
+      description: "Aplicativo web em PHP com banco MySQL para gerenciamento financeiro de propriedades rurais. Permite registrar receitas, despesas, serviços e notas fiscais. Acesso via login simples (ex.: user@gmail.com / senha: 123456).",
+      image: image14,
+      link: "http://ruralgest.infinityfreeapp.com/",
     },
   ];
 
