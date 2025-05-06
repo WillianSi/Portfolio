@@ -12,6 +12,8 @@ import image11 from "../assets/image11.png";
 import image12 from "../assets/image12.png";
 import image13 from "../assets/image13.png";
 import image14 from "../assets/image14.png";
+import image15 from "../assets/image15.png";
+import image16 from "../assets/image16.png";
 
 function Portfolio() {
   const projects = [
@@ -99,6 +101,19 @@ function Portfolio() {
       image: image14,
       link: "http://ruralgest.infinityfreeapp.com/",
     },
+    {
+      title: "Todo List",
+      description: "Aplicativo web em React para gerenciamento simples de tarefas (todo list). Permite adicionar, marcar como concluído e remover tarefas. Hospedado no Render para demonstração online.",
+      image: image15,
+      link: "https://projeto-react-todo.vercel.app/",
+    },
+    {
+      title: "Classificador de Diabetes",
+      description: "Aplicativo web em Flask que utiliza Machine Learning para prever o risco de diabetes com base em fatores de saúde. Permite ao usuário preencher um formulário e receber uma avaliação personalizada sobre seu risco estimado.",
+      image: image16,
+      link: "https://flask-diabetes-xxv5.onrender.com/",
+    }
+    
   ];
 
   return (
