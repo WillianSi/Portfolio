@@ -254,9 +254,10 @@ function Portfolio() {
         </p>
 
         <p className="max-w-2xl mx-auto text-sm text-yellow-700 dark:text-yellow-400 italic mb-10">
-          ⚠ Aviso: Alguns projetos podem não funcionar corretamente caso
-          dependam de serviços externos (como APIs ou back-ends hospedados) que
-          foram desativados ou estão temporariamente indisponíveis.
+          ⚠ Aviso: Alguns projetos podem não funcionar corretamente ou demorar
+          para carregar caso dependam de serviços externos (como APIs ou
+          back-ends hospedados) que foram desativados ou estão temporariamente
+          indisponíveis.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {projects.map((project, index) => (
