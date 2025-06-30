@@ -5,7 +5,7 @@ import {
   
   function LanguagesAndCourses() {
     const languages = [
-        { name: "Inglês", level: "Intermediário", icon: <FaGlobeAmericas size={40} className="text-blue-500" /> },
+        { name: "Inglês", level: "Intermediário (B1)", icon: <FaGlobeAmericas size={40} className="text-blue-500" /> },
         { name: "Português", level: "Fluente", icon: <FaGlobeEurope size={40} className="text-green-500" /> },
     ];
   
