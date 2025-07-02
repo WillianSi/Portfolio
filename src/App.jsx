@@ -17,10 +17,6 @@ function App() {
         <Home />
       </section>
 
-      <section id="skills">
-        <Skills />
-      </section>
-
       <section id="experience">
         <Experience />
       </section>
@@ -29,12 +25,8 @@ function App() {
         <VoluntaryWork />
       </section>
 
-      <section id="education">
-        <Education />
-      </section>
-
-      <section id="languages">
-        <LanguagesAndExtras />
+      <section id="skills">
+        <Skills />
       </section>
 
       <section id="portfolio">

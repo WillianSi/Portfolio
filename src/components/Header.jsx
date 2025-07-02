@@ -6,11 +6,11 @@ function Header() {
 
   const links = [
     { label: 'Home', href: '#home' },
-    { label: 'Skills', href: '#skills' },
     { label: 'Experience', href: '#experience' },
     { label: 'Voluntary Work', href: '#voluntary-work' },
-    { label: 'Education', href: '#education' },
-    { label: 'Languages & Extras', href: '#languages' },
+    { label: 'Skills', href: '#skills' },
+    // { label: 'Education', href: '#education' },
+    // { label: 'Languages & Extras', href: '#languages' },
     { label: 'Portfolio', href: '#portfolio' },
   ];
 

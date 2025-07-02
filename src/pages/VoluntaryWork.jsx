@@ -1,17 +1,12 @@
+import { useState } from "react";
 import { FaGlobe, FaInstagram } from "react-icons/fa";
+import Modal from "../components/Modal";
+import voluntaryData from "../data/voluntaryData";
 
 function VoluntaryWork() {
-  const project = {
-    organization: "MAB – Mapa Autismo Brasil",
-    description:
-      "Primeira plataforma independente de inteligência de dados sobre autismo no Brasil, dedicada à coleta, organização, análise e interpretação de informações sobre a população autista.",
-    tasks:
-      "Atuei na extração, tratamento e análise de dados, incluindo o cálculo da amostra sociodemográfica e o desenvolvimento de relatórios e dashboards para visualização e disseminação de resultados, gerando insights valiosos para embasar políticas públicas e promover inclusão.",
-    image:
-      "https://images.unsplash.com/photo-1560961911-ba7ef651a56c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    website: "https://www.mapaautismobrasil.com.br/",
-    instagram: "https://www.instagram.com/mab.autismo/",
-  };
+  const [open, setOpen] = useState(false);
+
+  const project = voluntaryData["mab"];
 
   return (
     <section className="min-h-screen bg-gray-100 dark:bg-gray-900 py-16 px-6 font-sans">
@@ -25,14 +20,22 @@ function VoluntaryWork() {
           mudanças reais.
         </p>
 
-        <div className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden">
+        <div
+          onClick={() => setOpen(true)}
+          className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow hover:shadow-lg transition-shadow hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer overflow-hidden"
+        >
+          <div className="bg-green-600 text-white text-sm font-medium rounded-t-lg px-3 py-1">
+            Clique e saiba mais
+          </div>
+
           <div
             className="h-56 w-full bg-cover bg-center"
             style={{ backgroundImage: `url(${project.image})` }}
           ></div>
+
           <div className="p-6 text-left">
             <h3 className="text-2xl font-semibold mb-2 text-green-500">
-              {project.organization}
+              {project.company}
             </h3>
             <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
               {project.description}
@@ -47,6 +50,7 @@ function VoluntaryWork() {
                 rel="noopener noreferrer"
                 className="text-blue-500 hover:text-blue-700 text-xl"
                 title="Website"
+                 onClick={(e) => e.stopPropagation()}
               >
                 <FaGlobe />
               </a>
@@ -56,6 +60,7 @@ function VoluntaryWork() {
                 rel="noopener noreferrer"
                 className="text-pink-500 hover:text-pink-700 text-xl"
                 title="Instagram"
+                onClick={(e) => e.stopPropagation()}
               >
                 <FaInstagram />
               </a>
@@ -63,6 +68,91 @@ function VoluntaryWork() {
           </div>
         </div>
       </div>
+
+      {/* Modal */}
+      <Modal isOpen={open} onClose={() => setOpen(false)} title={project.role}>
+        <div className="space-y-4 text-left text-gray-700 dark:text-gray-300">
+          <p className="text-sm font-medium">
+            <span className="text-green-600 dark:text-green-400">
+              {project.company}
+            </span>{" "}
+            — {project.period}
+          </p>
+
+          <div className="space-y-3 text-left text-gray-700 dark:text-gray-300">
+
+            <p>
+              <span className="text-green-600 dark:text-green-400 font-semibold">
+                Missão:
+              </span>{" "}
+              {project.mission}
+            </p>
+            <p>
+              <span className="text-green-600 dark:text-green-400 font-semibold">
+                Metodologia:
+              </span>{" "}
+              {project.methodology}
+            </p>
+            <p>
+              <span className="text-green-600 dark:text-green-400 font-semibold">
+                Participantes:
+              </span>{" "}
+              {project.participants}
+            </p>
+            <p>
+              <span className="text-green-600 dark:text-green-400 font-semibold">
+                Questionário:
+              </span>{" "}
+              {project.questionnaire}
+            </p>
+            <p>
+              <span className="text-green-600 dark:text-green-400 font-semibold">
+                Resultados Esperados:
+              </span>{" "}
+              {project.results}
+            </p>
+          </div>
+
+          <div className="space-y-2">
+            <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-100">
+              Atividades Desenvolvidas
+            </h4>
+            <ul className="space-y-2">
+              {project.details?.map((item, idx) => (
+                <li key={idx} className="flex items-start gap-2">
+                  <svg
+                    className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                  </svg>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {project.gallery?.length > 0 && (
+            <div>
+              <h4 className="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-100">
+                Galeria
+              </h4>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                {project.gallery.map((src, idx) => (
+                  <img
+                    key={idx}
+                    src={src}
+                    alt={`Foto ${idx + 1}`}
+                    className="rounded-lg object-cover w-full h-32 hover:scale-105 transition-transform duration-200"
+                  />
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      </Modal>
     </section>
   );
 }
