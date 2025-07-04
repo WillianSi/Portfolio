@@ -3,7 +3,7 @@ import foto from "/src/assets/imagem.jpg";
 function Home() {
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/CV_Willian.pdf"; // precisa estar em /public
+    link.href = "/CV_Willian_Silvestre.pdf";
     link.download = "Willian_Silvestre_CV.pdf";
     document.body.appendChild(link);
     link.click();
@@ -21,14 +21,14 @@ function Home() {
             <br /> Desenvolvedor Full Stack
           </h1>
           <p className="mb-6 text-gray-300">
-            Desenvolvedor full stack com mais de 2 anos de experiência em
-            projetos corporativos, freelance e voluntariado. Foco em soluções
-            web responsivas, atuando no front-end, back-end, banco de dados e
-            serviços em nuvem. Participou do 1º mapeamento nacional não
-            governamental do autismo, contribuindo com análise e visualização de
-            dados.
+            Desenvolvedor full stack com foco em front-end, com mais de 2 anos de 
+            experiência em projetos corporativos e como freelancer, além de 1 ano 
+            de atuação voluntária. Foco em soluções web responsivas, atuando no 
+            front-end, back-end, banco de dados e serviços em nuvem. Participou 
+            do 1º mapeamento nacional não governamental do autismo, contribuindo 
+            com análise e visualização de dados.
           </p>
-          <div className="flex gap-4">
+          <div className="flex gap-4 flex-wrap">
             <a
               href="https://github.com/WillianSi"
               target="_blank"
