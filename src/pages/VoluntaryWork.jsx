@@ -71,7 +71,7 @@ function VoluntaryWork() {
 
       {/* Modal */}
       <Modal isOpen={open} onClose={() => setOpen(false)} title={project.role}>
-        <div className="space-y-4 text-left text-gray-700 dark:text-gray-300">
+        <div className="space-y-4 text-justify text-gray-700 dark:text-gray-300">
           <p className="text-sm font-medium">
             <span className="text-green-600 dark:text-green-400">
               {project.company}

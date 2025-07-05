@@ -11,6 +11,7 @@ import {
   FaLinux,
   FaGitAlt,
   FaAndroid,
+  FaBootstrap,
 } from "react-icons/fa";
 import {
   SiMysql,
@@ -21,6 +22,7 @@ import {
   SiFlutter,
   SiR,
   SiJoomla,
+  SiTailwindcss,
 } from "react-icons/si";
 import { useEffect, useRef, useState } from "react";
 
@@ -52,6 +54,8 @@ function Skills() {
     { name: "Joomla", icon: <SiJoomla size={32} />, level: 30 },
     { name: "Git", icon: <FaGitAlt size={32} />, level: 50 },
     { name: "Android", icon: <FaAndroid size={32} />, level: 30 },
+    { name: "Tailwind", icon: <SiTailwindcss size={32} />, level: 30 },
+    { name: "Bootstrap", icon: <FaBootstrap size={32} />, level: 50 },
   ];
 
   const carouselRef = useRef(null);
@@ -66,7 +70,6 @@ function Skills() {
       if (!isPaused && carousel) {
         carousel.scrollLeft += scrollSpeed;
 
-        // Se passar da metade, volta de forma suave para o início da primeira metade
         if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
           carousel.scrollLeft = 0;
         }
@@ -103,8 +106,55 @@ function Skills() {
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
             className="flex gap-6 overflow-x-scroll whitespace-nowrap cursor-grab no-scrollbar scroll-smooth"
-            style={{ scrollBehavior: "auto" }} // <-- desativa o "smooth" padrão no JS
+            style={{ scrollBehavior: "auto" }}
           >
+            <button
+              onClick={() => {
+                if (carouselRef.current) {
+                  const maxScroll = carouselRef.current.scrollWidth / 2;
+                  const newScroll = carouselRef.current.scrollLeft - 200;
+                  carouselRef.current.scrollLeft =
+                    newScroll < 0 ? maxScroll + newScroll : newScroll;
+                }
+              }}
+              className="absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white rounded-full p-2 shadow"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 text-gray-800"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M12.707 15.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L8.414 10l4.293 4.293a1 1 0 010 1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
+
+            <button
+              onClick={() => {
+                if (carouselRef.current) {
+                  carouselRef.current.scrollLeft += 200;
+                }
+              }}
+              className="absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white rounded-full p-2 shadow"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 text-gray-800"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M7.293 4.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L11.586 10 7.293 5.707a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
+
             <div className="flex gap-6 min-w-max">
               {[...skills, ...skills].map((skill, index) => {
                 const stage = getSkillStage(skill.level);

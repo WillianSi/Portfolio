@@ -52,7 +52,7 @@ function Experience() {
                   {exp.period}
                 </p>
                 <p className="text-sm text-gray-700 dark:text-gray-300">
-                  {exp.tasks}
+                  {exp.description}
                 </p>
               </div>
             </div>
@@ -73,7 +73,11 @@ function Experience() {
             </span>{" "}
             — {selected?.period}
           </p>
-          <ul className="space-y-2 text-gray-700 dark:text-gray-300 text-left">
+          <p className="text-gray-700 dark:text-gray-300 text-justify mb-4">
+            {selected?.tasks}
+          </p>
+
+          <ul className="space-y-2 text-gray-700 dark:text-gray-300 text-justify">
             {selected?.details?.map((item, idx) => (
               <li key={idx} className="flex items-start gap-2">
                 <svg
