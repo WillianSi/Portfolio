@@ -38,7 +38,7 @@ const experiencesData = {
     role: "Estagiário de Manutenção de Sistemas Web",
     period: "Outubro/2022 - Abril/2023",
     description: "Manutenção e atualização do portal institucional do campus.",
-    tasks: "Esse estágio foi um divisor de águas na minha trajetória. Pela primeira vez, enfrentei um ambiente com demandas reais, prazos e impacto direto nos usuários. Atuei na manutenção e melhoria do portal institucional, precisando aprender Joomla do zero — um CMS (sistema de gerenciamento de conteúdo) amplamente utilizado para criar e administrar sites de forma dinâmica, com módulos e extensões personalizáveis do zero e lidar com responsabilidades técnicas importantes.",
+    tasks: "Esse estágio foi um divisor de águas na minha trajetória. Pela primeira vez, enfrentei um ambiente com demandas reais, prazos e impacto direto nos usuários. Atuei na manutenção e melhoria do portal institucional, precisando aprender Joomla do zero — um CMS (sistema de gerenciamento de conteúdo) amplamente utilizado para criar e administrar sites de forma dinâmica, com módulos e extensões personalizáveis e lidar com responsabilidades técnicas importantes.",
     image:
       "https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?q=80&w=2100&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     details: [

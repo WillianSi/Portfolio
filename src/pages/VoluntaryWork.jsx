@@ -79,37 +79,16 @@ function VoluntaryWork() {
             — {project.period}
           </p>
 
-          <div className="space-y-3 text-left text-gray-700 dark:text-gray-300">
+          <div className="space-y-3 text-justify text-gray-700 dark:text-gray-300">
 
+            <p>
+              {project.intro}
+            </p>
             <p>
               <span className="text-green-600 dark:text-green-400 font-semibold">
                 Missão:
               </span>{" "}
               {project.mission}
-            </p>
-            <p>
-              <span className="text-green-600 dark:text-green-400 font-semibold">
-                Metodologia:
-              </span>{" "}
-              {project.methodology}
-            </p>
-            <p>
-              <span className="text-green-600 dark:text-green-400 font-semibold">
-                Participantes:
-              </span>{" "}
-              {project.participants}
-            </p>
-            <p>
-              <span className="text-green-600 dark:text-green-400 font-semibold">
-                Questionário:
-              </span>{" "}
-              {project.questionnaire}
-            </p>
-            <p>
-              <span className="text-green-600 dark:text-green-400 font-semibold">
-                Resultados Esperados:
-              </span>{" "}
-              {project.results}
             </p>
           </div>
 
