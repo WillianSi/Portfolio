@@ -1,0 +1,37 @@
+{
+  "title": "Languages & Technologies",
+  "subtitle": "Here are the languages and technologies I’ve used or am familiar with. I’m always learning and leveling up my development skills.",
+  "buttons": {
+    "expand": "Expand all",
+    "collapse": "Collapse"
+  },
+  "stage": {
+    "beginner": "Beginner",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced"
+  },
+  "items": {
+    "python": { "name": "Python" },
+    "mysql": { "name": "MySQL" },
+    "java": { "name": "Java" },
+    "html": { "name": "HTML" },
+    "css": { "name": "CSS" },
+    "networks": { "name": "Computer Networks" },
+    "php": { "name": "PHP" },
+    "firebase": { "name": "Firebase" },
+    "aws": { "name": "AWS" },
+    "javascript": { "name": "JavaScript" },
+    "react": { "name": "React" },
+    "spring": { "name": "Spring" },
+    "docker": { "name": "Docker" },
+    "c_family": { "name": "C / C#" },
+    "linux": { "name": "Linux" },
+    "flutter": { "name": "Flutter" },
+    "r": { "name": "R" },
+    "joomla": { "name": "Joomla" },
+    "git": { "name": "Git" },
+    "android": { "name": "Android" },
+    "tailwind": { "name": "Tailwind" },
+    "bootstrap": { "name": "Bootstrap" }
+  }
+}

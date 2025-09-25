@@ -1,0 +1,39 @@
+{
+  "title": "Volunteer Work",
+  "subtitle": "A transformative experience that reinforces my commitment to social impact, applying data and technology to promote inclusion and drive real change.",
+  "ctaCard": "Click to learn more",
+  "sections": {
+    "activities": "Activities Performed",
+    "gallery": "Gallery"
+  },
+  "aria": {
+    "close": "Close"
+  },
+  "project": {
+    "id": "mab",
+    "company": "MAB – Autism Map Brazil",
+    "role": "Volunteer Data Analyst",
+    "period": "2024 / Present",
+    "description": "The first independent data-intelligence platform on autism in Brazil, dedicated to collecting, organizing, analyzing, and interpreting information about the autistic population.",
+    "tasks": "I worked on data extraction, cleaning, and analysis, including sociodemographic sampling and the development of reports and dashboards to disseminate results, generating valuable insights to inform public policy and foster inclusion.",
+    "intro": "Volunteering at MAB has been one of the most meaningful experiences of my journey so far. Unlike conventional projects, this initiative has a strong social purpose, focused on inclusion and on building public policies based on real data about the autistic population in Brazil. I joined as a data analyst, but soon realized my role went beyond numbers: it was about turning data into dignity, visibility, and rights.",
+    "mission": "Map the sociodemographic and clinical profile of autistic people across Brazil, providing essential data to inform public policies, expand access to services, and secure rights.",
+    "methodology": "The research was conducted 100% online, with non-probability convenience sampling. Approved by the University of Brasília Ethics Committee (CAAE: 85422624.9.0000.5540).",
+    "participants": "Adult autistics (18+) with a medical diagnosis and caregivers of autistic minors or adults who cannot respond on their own participated.",
+    "questionnaire": "The online form (SurveyMonkey) does not request sensitive data and covers: sociodemographic profile, diagnosis, education, therapies, and medical follow-up.",
+    "results": "Results will be published on the MAB website and will contribute to public policies, service strategies, and improved access to rights for the autistic community.",
+    "image": "https://images.unsplash.com/photo-1560961911-ba7ef651a56c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3",
+    "website": "https://www.mapaautismobrasil.com.br/",
+    "instagram": "https://www.instagram.com/mab.autismo/",
+    "details": [
+      "Performed extraction, cleaning, standardization, and validation of raw data to ensure integrity and reliability for statistical analyses.",
+      "Calculated representative sociodemographic samples based on regional, socioeconomic, and age criteria.",
+      "Developed interactive dashboards and analytical reports for public release to institutions and healthcare professionals.",
+      "Used tools such as R, Python (Pandas), and Power BI for data analysis and visualization.",
+      "Conducted technical review and correction of questionnaires, contributing to methodological consistency.",
+      "Collaborated remotely and voluntarily, demonstrating social engagement, autonomy, and organization in collaborative environments.",
+      "Collaborated with professionals from different fields and regions of Brazil and abroad, in a 100% remote environment with weekly meetings and deliverables."
+    ],
+    "gallery": []
+  }
+}

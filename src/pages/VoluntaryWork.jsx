@@ -1,23 +1,25 @@
+// src/pages/VoluntaryWork.jsx
 import { useState } from "react";
 import { FaGlobe, FaInstagram } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 import Modal from "../components/Modal";
-import voluntaryData from "../data/voluntaryData";
 
 function VoluntaryWork() {
+  const { t } = useTranslation("voluntaryWork");
   const [open, setOpen] = useState(false);
 
-  const project = voluntaryData["mab"];
+  // pega o objeto do projeto inteiro do JSON
+  const project = t("project", { returnObjects: true });
 
   return (
     <section className="min-h-screen bg-gray-100 dark:bg-gray-900 py-16 px-6 font-sans">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800 dark:text-white">
-          Trabalho Voluntário
+          {t("title")}
         </h2>
+
         <p className="max-w-2xl mx-auto text-gray-600 dark:text-gray-300 mb-10">
-          Uma experiência transformadora que reforça meu compromisso com impacto
-          social, aplicando dados e tecnologia para promover inclusão e gerar
-          mudanças reais.
+          {t("subtitle")}
         </p>
 
         <div
@@ -25,13 +27,13 @@ function VoluntaryWork() {
           className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow hover:shadow-lg transition-shadow hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer overflow-hidden"
         >
           <div className="bg-green-600 text-white text-sm font-medium rounded-t-lg px-3 py-1">
-            Clique e saiba mais
+            {t("ctaCard")}
           </div>
 
           <div
             className="h-56 w-full bg-cover bg-center"
             style={{ backgroundImage: `url(${project.image})` }}
-          ></div>
+          />
 
           <div className="p-6 text-left">
             <h3 className="text-2xl font-semibold mb-2 text-green-500">
@@ -43,6 +45,7 @@ function VoluntaryWork() {
             <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">
               {project.tasks}
             </p>
+
             <div className="flex space-x-4">
               <a
                 href={project.website}
@@ -50,7 +53,7 @@ function VoluntaryWork() {
                 rel="noopener noreferrer"
                 className="text-blue-500 hover:text-blue-700 text-xl"
                 title="Website"
-                 onClick={(e) => e.stopPropagation()}
+                onClick={(e) => e.stopPropagation()}
               >
                 <FaGlobe />
               </a>
@@ -79,25 +82,27 @@ function VoluntaryWork() {
             — {project.period}
           </p>
 
-          <div className="space-y-3 text-justify text-gray-700 dark:text-gray-300">
-
-            <p>
-              {project.intro}
-            </p>
+          <div className="space-y-3">
+            <p>{project.intro}</p>
             <p>
               <span className="text-green-600 dark:text-green-400 font-semibold">
-                Missão:
+                {t("missionLabel", { defaultValue: "Missão:" })}
               </span>{" "}
               {project.mission}
             </p>
+            {/* Se quiser exibir outras partes do projeto, descomente: */}
+            {/* <p><b>Metodologia:</b> {project.methodology}</p>
+            <p><b>Participantes:</b> {project.participants}</p>
+            <p><b>Questionário:</b> {project.questionnaire}</p>
+            <p><b>Resultados:</b> {project.results}</p> */}
           </div>
 
           <div className="space-y-2">
             <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-100">
-              Atividades Desenvolvidas
+              {t("sections.activities")}
             </h4>
             <ul className="space-y-2">
-              {project.details?.map((item, idx) => (
+              {(project.details || []).map((item, idx) => (
                 <li key={idx} className="flex items-start gap-2">
                   <svg
                     className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 shrink-0"
@@ -113,10 +118,10 @@ function VoluntaryWork() {
             </ul>
           </div>
 
-          {project.gallery?.length > 0 && (
+          {(project.gallery || []).length > 0 && (
             <div>
               <h4 className="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-100">
-                Galeria
+                {t("sections.gallery")}
               </h4>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                 {project.gallery.map((src, idx) => (

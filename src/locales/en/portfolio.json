@@ -1,0 +1,95 @@
+{
+  "title": "Portfolio",
+  "subtitle": "Browse some of the projects I’ve built and put online. Click to open and learn more about each one.",
+  "warning": "⚠ Notice: Some projects may not work correctly or may load slowly if they depend on external services (such as APIs or hosted back ends) that are disabled or temporarily unavailable.",
+  "buttons": {
+    "showMore": "Show more projects",
+    "showLess": "Show less"
+  },
+  "repos": {
+    "github": "GitHub",
+    "backend": "Back-end"
+  },
+  "projects": [
+    {
+      "id": "movie",
+      "title": "Movie Catalog",
+      "description": "A React website that shows movie catalogs connected to the IMDb API, allowing you to search, browse, and view details."
+    },
+    {
+      "id": "copa",
+      "title": "World Cup 2022 Image Analysis",
+      "description": "React app that analyzes images related to the 2022 World Cup in Qatar, bringing visual insights and extracted information."
+    },
+    {
+      "id": "zaila",
+      "title": "Zaila Chat",
+      "description": "A modern React chatbot integrated with AI services via Hugging Face and hosted on Render, featuring smart answers, speech recognition, and real-time reading."
+    },
+    {
+      "id": "axios",
+      "title": "React Blog with Axios",
+      "description": "A blog built with React + Vite that consumes the JSONPlaceholder public API via Axios to display dynamic posts."
+    },
+    {
+      "id": "cost",
+      "title": "Project Cost Management",
+      "description": "React app to manage and track project costs: add projects, set budgets, and monitor expenses easily."
+    },
+    {
+      "id": "quiz",
+      "title": "Programming Quiz",
+      "description": "React + Vite app with interactive quizzes about HTML, CSS, and JavaScript."
+    },
+    {
+      "id": "flores",
+      "title": "Flower Analysis",
+      "description": "Interactive web app using a Teachable Machine model to identify flower types from the user’s camera images."
+    },
+    {
+      "id": "folhas",
+      "title": "Leaf Analysis",
+      "description": "Web app that uses a Google Teachable Machine model to classify and analyze leaf images."
+    },
+    {
+      "id": "farmUser",
+      "title": "FarmGest – Medicine Lookup",
+      "description": "React app for a community pharmacy so people can check available medicines (demo login: user@gmail.com / 123456)."
+    },
+    {
+      "id": "farmAdmin",
+      "title": "FarmGest – Admin Dashboard",
+      "description": "Admin dashboard in React for internal management of the community pharmacy (demo login: admin@gmail.com / 123456)."
+    },
+    {
+      "id": "denunciaAdmin",
+      "title": "Internal Whistleblowing (Admin)",
+      "description": "React app for internal anonymous reports in a company. Admins can add users, view reports, and manage the system (demo login: admin@gmail.com / 123456)."
+    },
+    {
+      "id": "denunciaUser",
+      "title": "Internal Whistleblowing (User)",
+      "description": "React app for anonymous internal reporting. Users submit a report and receive auto-generated credentials to track it with privacy."
+    },
+    {
+      "id": "escola",
+      "title": "Escolachek (School Attendance)",
+      "description": "React app integrated with Firebase to handle school attendance: mark presence, generate reports, and track frequency (demo login: user@gmail.com / 123456)."
+    },
+    {
+      "id": "ruralgest",
+      "title": "RuralGest (Rural Management)",
+      "description": "PHP + MySQL web app for financial management of rural properties: register income, expenses, services, and invoices (demo login: user@gmail.com / 123456)."
+    },
+    {
+      "id": "todo",
+      "title": "Todo List",
+      "description": "React web app for simple task management. Hosted on Render for an online demo."
+    },
+    {
+      "id": "diabetes",
+      "title": "Diabetes Classifier",
+      "description": "Flask web app using ML to estimate diabetes risk based on health factors, returning a personalized assessment."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "title": "Linguagens & Tecnologias",
+  "subtitle": "Aqui estão as linguagens e tecnologias que já utilizei ou com as quais tenho familiaridade. Estou sempre buscando aprender mais e evoluir minhas habilidades no desenvolvimento.",
+  "buttons": {
+    "expand": "Expandir tudo",
+    "collapse": "Recolher"
+  },
+  "stage": {
+    "beginner": "Iniciante",
+    "intermediate": "Intermediário",
+    "advanced": "Avançado"
+  },
+  "items": {
+    "python": { "name": "Python" },
+    "mysql": { "name": "MySQL" },
+    "java": { "name": "Java" },
+    "html": { "name": "HTML" },
+    "css": { "name": "CSS" },
+    "networks": { "name": "Redes de Computadores" },
+    "php": { "name": "PHP" },
+    "firebase": { "name": "Firebase" },
+    "aws": { "name": "AWS" },
+    "javascript": { "name": "JavaScript" },
+    "react": { "name": "React" },
+    "spring": { "name": "Spring" },
+    "docker": { "name": "Docker" },
+    "c_family": { "name": "C / C#" },
+    "linux": { "name": "Linux" },
+    "flutter": { "name": "Flutter" },
+    "r": { "name": "R" },
+    "joomla": { "name": "Joomla" },
+    "git": { "name": "Git" },
+    "android": { "name": "Android" },
+    "tailwind": { "name": "Tailwind" },
+    "bootstrap": { "name": "Bootstrap" }
+  }
+}

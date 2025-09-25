@@ -25,37 +25,42 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 
-function getSkillStage(level) {
-  if (level >= 75) return { label: "Avançado", color: "bg-red-500" };
-  if (level >= 40) return { label: "Intermediário", color: "bg-yellow-400" };
-  return { label: "Iniciante", color: "bg-green-500" };
+function getSkillStage(level, t) {
+  if (level >= 75) return { label: t("stage.advanced"), color: "bg-red-500" };
+  if (level >= 40)
+    return { label: t("stage.intermediate"), color: "bg-yellow-400" };
+  return { label: t("stage.beginner"), color: "bg-green-500" };
 }
 
 function Skills() {
+  const { t } = useTranslation("skills");
+
+  // defina um id para cada skill
   const skills = [
-    { name: "Python", icon: <FaPython size={32} />, level: 50 },
-    { name: "MySQL", icon: <SiMysql size={32} />, level: 50 },
-    { name: "Java", icon: <FaJava size={32} />, level: 50 },
-    { name: "HTML", icon: <FaHtml5 size={32} />, level: 50 },
-    { name: "CSS", icon: <FaCss3Alt size={32} />, level: 50 },
-    { name: "Computer Networks", icon: <FaDatabase size={32} />, level: 30 },
-    { name: "PHP", icon: <FaPhp size={32} />, level: 30 },
-    { name: "Firebase", icon: <SiFirebase size={32} />, level: 30 },
-    { name: "AWS", icon: <FaAws size={32} />, level: 30 },
-    { name: "JavaScript", icon: <SiJavascript size={32} />, level: 50 },
-    { name: "React", icon: <FaReact size={32} />, level: 50 },
-    { name: "Spring", icon: <SiSpring size={32} />, level: 50 },
-    { name: "Docker", icon: <FaDocker size={32} />, level: 30 },
-    { name: "C / C#", icon: <SiC size={32} />, level: 50 },
-    { name: "Linux", icon: <FaLinux size={32} />, level: 50 },
-    { name: "Flutter", icon: <SiFlutter size={32} />, level: 30 },
-    { name: "R", icon: <SiR size={32} />, level: 30 },
-    { name: "Joomla", icon: <SiJoomla size={32} />, level: 30 },
-    { name: "Git", icon: <FaGitAlt size={32} />, level: 50 },
-    { name: "Android", icon: <FaAndroid size={32} />, level: 30 },
-    { name: "Tailwind", icon: <SiTailwindcss size={32} />, level: 30 },
-    { name: "Bootstrap", icon: <FaBootstrap size={32} />, level: 50 },
+    { id: "python", icon: <FaPython size={32} />, level: 50 },
+    { id: "mysql", icon: <SiMysql size={32} />, level: 50 },
+    { id: "java", icon: <FaJava size={32} />, level: 50 },
+    { id: "html", icon: <FaHtml5 size={32} />, level: 50 },
+    { id: "css", icon: <FaCss3Alt size={32} />, level: 50 },
+    { id: "networks", icon: <FaDatabase size={32} />, level: 30 },
+    { id: "php", icon: <FaPhp size={32} />, level: 30 },
+    { id: "firebase", icon: <SiFirebase size={32} />, level: 30 },
+    { id: "aws", icon: <FaAws size={32} />, level: 30 },
+    { id: "javascript", icon: <SiJavascript size={32} />, level: 50 },
+    { id: "react", icon: <FaReact size={32} />, level: 50 },
+    { id: "spring", icon: <SiSpring size={32} />, level: 50 },
+    { id: "docker", icon: <FaDocker size={32} />, level: 30 },
+    { id: "c_family", icon: <SiC size={32} />, level: 50 },
+    { id: "linux", icon: <FaLinux size={32} />, level: 50 },
+    { id: "flutter", icon: <SiFlutter size={32} />, level: 30 },
+    { id: "r", icon: <SiR size={32} />, level: 30 },
+    { id: "joomla", icon: <SiJoomla size={32} />, level: 30 },
+    { id: "git", icon: <FaGitAlt size={32} />, level: 50 },
+    { id: "android", icon: <FaAndroid size={32} />, level: 30 },
+    { id: "tailwind", icon: <SiTailwindcss size={32} />, level: 30 },
+    { id: "bootstrap", icon: <FaBootstrap size={32} />, level: 50 },
   ];
 
   const carouselRef = useRef(null);
@@ -80,7 +85,6 @@ function Skills() {
     if (!expanded) {
       animationFrameId = requestAnimationFrame(scroll);
     }
-
     return () => cancelAnimationFrame(animationFrameId);
   }, [isPaused, expanded]);
 
@@ -88,40 +92,44 @@ function Skills() {
     <section className="bg-gray-100 py-6 px-4 font-sans">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">
-          Linguagens & Tecnologias
+          {t("title")}
         </h2>
-        <p className="max-w-2xl mx-auto text-gray-600 mb-6">
-          Aqui estão as linguagens e tecnologias que já utilizei ou com as quais tenho familiaridade. Estou sempre buscando aprender mais e evoluir minhas habilidades no desenvolvimento.
-        </p>
+
+        <p className="max-w-2xl mx-auto text-gray-600 mb-6">{t("subtitle")}</p>
 
         <div className="mb-6">
           <button
             onClick={() => setExpanded(!expanded)}
             className="px-4 py-2 bg-green-500 text-white font-semibold rounded-full hover:bg-green-600 transition"
           >
-            {expanded ? "Recolher" : "Expandir tudo"}
+            {expanded ? t("buttons.collapse") : t("buttons.expand")}
           </button>
         </div>
 
         {expanded ? (
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-            {skills.map((skill, index) => {
-              const stage = getSkillStage(skill.level);
+            {skills.map((skill) => {
+              const stage = getSkillStage(skill.level, t);
               return (
                 <div
-                  key={index}
+                  key={skill.id}
                   className="bg-white border border-gray-300 rounded-lg p-4 flex flex-col items-center shadow hover:shadow-lg"
                 >
                   <div className="mb-2 text-gray-700">{skill.icon}</div>
-                  <p className="text-sm text-gray-700 mb-2">{skill.name}</p>
+                  <p className="text-sm text-gray-700 mb-2">
+                    {t(`items.${skill.id}.name`)}
+                  </p>
                   <div className="w-full bg-gray-200 rounded-full h-2">
                     <div
                       className={`h-2 rounded-full ${stage.color}`}
                       style={{ width: `${skill.level}%` }}
-                    ></div>
+                    />
                   </div>
                   <p
-                    className={`text-xs font-medium mt-1 ${stage.color.replace("bg", "text")}`}
+                    className={`text-xs font-medium mt-1 ${stage.color.replace(
+                      "bg",
+                      "text"
+                    )}`}
                   >
                     {stage.label}
                   </p>
@@ -138,27 +146,32 @@ function Skills() {
               ref={carouselRef}
               onMouseEnter={() => setIsPaused(true)}
               onMouseLeave={() => setIsPaused(false)}
-              className="flex gap-6 overflow-x-scroll whitespace-nowrap cursor-grab no-scrollbar scroll-smooth"
+              className="flex gap-6 overflow-x-scroll whitespace-nowrap cursor-grab no-scrollbar"
               style={{ scrollBehavior: "auto" }}
             >
               <div className="flex gap-6 min-w-max">
                 {[...skills, ...skills].map((skill, index) => {
-                  const stage = getSkillStage(skill.level);
+                  const stage = getSkillStage(skill.level, t);
                   return (
                     <div
-                      key={index}
+                      key={`${skill.id}-${index}`}
                       className="bg-white border border-gray-300 rounded-lg p-4 flex flex-col items-center shadow hover:shadow-lg w-40 shrink-0"
                     >
                       <div className="mb-2 text-gray-700">{skill.icon}</div>
-                      <p className="text-sm text-gray-700 mb-2">{skill.name}</p>
+                      <p className="text-sm text-gray-700 mb-2">
+                        {t(`items.${skill.id}.name`)}
+                      </p>
                       <div className="w-full bg-gray-200 rounded-full h-2">
                         <div
                           className={`h-2 rounded-full ${stage.color}`}
                           style={{ width: `${skill.level}%` }}
-                        ></div>
+                        />
                       </div>
                       <p
-                        className={`text-xs font-medium mt-1 ${stage.color.replace("bg", "text")}`}
+                        className={`text-xs font-medium mt-1 ${stage.color.replace(
+                          "bg",
+                          "text"
+                        )}`}
                       >
                         {stage.label}
                       </p>
@@ -175,4 +188,3 @@ function Skills() {
 }
 
 export default Skills;
-

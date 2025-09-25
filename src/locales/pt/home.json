@@ -1,0 +1,11 @@
+{
+  "titleHello": "Olá, eu sou",
+  "titleRole": "Desenvolvedor Full Stack",
+  "paragraph": "Desenvolvedor full stack com foco em front-end, com mais de 2 anos de experiência em projetos corporativos e como freelancer, além de 1 ano de atuação voluntária. Foco em soluções web responsivas, atuando no front-end, back-end, banco de dados e serviços em nuvem. Participou do 1º mapeamento nacional não governamental do autismo, contribuindo com análise e visualização de dados.",
+  "buttons": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "resume": "Currículo"
+  },
+  "imageAlt": "Willian Silvestre"
+}

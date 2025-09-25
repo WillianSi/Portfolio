@@ -1,0 +1,64 @@
+{
+  "title": "Professional Experience",
+  "subtitle": "A summary of the experiences that have shaped my journey as a developer, always driven by continuous learning, technical improvement, and a commitment to delivering practical, high-quality solutions.",
+  "ctaCard": "Click to learn more",
+  "modal": {
+    "galleryTitle": "Gallery",
+    "aria": {
+      "close": "Close",
+      "prev": "Previous image",
+      "next": "Next image"
+    }
+  },
+  "list": [
+    {
+      "id": "ml",
+      "company": "ML Software House",
+      "role": "Web Development Intern",
+      "period": "September/2022 - December/2022",
+      "description": "Studying modern web app technologies with React and Spring.",
+      "tasks": "My first contact with the professional environment was at ML Software House, where I learned from experienced professionals and dove into the fundamentals of web development. Although my role was more focused on hands-on learning than on critical tasks, that period was essential to building my technical foundation and understanding real-world projects.",
+      "details": [
+        "Actively participated in an internship program focused on modern web application development, with guidance on agile methodologies and coding best practices.",
+        "Studied and applied technologies such as React (JavaScript, JSX, state management, reusable components) to develop responsive and dynamic interfaces.",
+        "Worked on the back end with Spring (Java), helping create and maintain RESTful APIs and integrations with relational databases.",
+        "Fixed bugs, implemented visual improvements, and delivered incremental updates on both front end and back end with attention to UX and performance.",
+        "Worked with mid- and senior-level developers, participated in code reviews, and practiced Git version control.",
+        "Gained exposure to MySQL, GitHub, and Trello, as well as CI/CD concepts and automated testing."
+      ]
+    },
+    {
+      "id": "ifsul",
+      "company": "Federal Institute of Southern Minas — Machado Campus",
+      "role": "Web Systems Maintenance Intern",
+      "period": "October/2022 - April/2023",
+      "description": "Maintenance and updates of the campus institutional portal.",
+      "tasks": "This internship was a turning point in my path. For the first time, I faced a setting with real demands, deadlines, and direct impact on users. I worked on maintaining and improving the institutional portal, learning Joomla from scratch — a widely used CMS for building and managing dynamic websites with customizable modules and extensions — while handling important technical responsibilities.",
+      "details": [
+        "Responsible for maintaining and updating the campus institutional portal built on Joomla (PHP-based CMS).",
+        "Worked mostly autonomously, serving as the main technical point of contact for the website during the internship.",
+        "Performed layout adjustments, content updates, and section restructuring to improve navigation and user experience.",
+        "Self-taught Joomla’s core features and extensions, including menu management, user permissions, modules, and templates."
+      ]
+    },
+    {
+      "id": "mzzi",
+      "company": "MZZI Think Digital",
+      "role": "Web Systems Developer",
+      "period": "July/2023 - January/2025",
+      "description": "Technical lead for web projects using React, PHP, and Firebase.",
+      "tasks": "During my time at MZZI, I worked with full autonomy on web systems from concept to delivery. Each project brought new technical and creative challenges, where I could experiment, learn, and propose solutions that truly impacted the client.",
+      "details": [
+        "Project-based web developer serving as the sole technical lead for development and maintenance.",
+        "Handled all project phases: requirements, development, testing, deployment, and support.",
+        "Built dynamic, responsive interfaces using React or PHP on the front end, per project demands.",
+        "Used Firebase for authentication, notifications, and data hosting.",
+        "Implemented secure authentication (OAuth), session management with cookies, and caching strategies for performance.",
+        "Focused on load-time optimization, usability, and UX/UI.",
+        "Performed testing, debugging, and continuous updates with Git/GitHub versioning.",
+        "Delivered autonomously, demonstrating proactivity, organization, and strong command of the tools."
+      ]
+    }
+  ]
+}
+
