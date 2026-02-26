@@ -7,7 +7,7 @@ function Home() {
 
   const handleDownloadResume = () => {
     const isEN = i18n.language?.startsWith("en");
-    const fileName = isEN ? "CV_Willian_Silvestre_EN.pdf" : "CV_Willian_Silvestre_PT.pdf";
+    const fileName = isEN ? "Willian_Silvestre_Resume.pdf" : "Willian_Silvestre_Curriculo.pdf";
     const link = document.createElement("a");
     link.href = `/${fileName}`; // PDFs em /public
     link.download = fileName;

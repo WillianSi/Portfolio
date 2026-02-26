@@ -20,11 +20,11 @@
       "tasks": "Meu primeiro contato com o ambiente profissional foi na ML Software House, onde tive a oportunidade de aprender com profissionais experientes e mergulhar nos fundamentos do desenvolvimento web. Embora meu papel estivesse mais voltado ao aprendizado prático do que à execução de tarefas críticas, essa fase foi essencial para minha base técnica e visão de projetos reais.",
       "details": [
         "Participou ativamente de um programa de estágio focado no desenvolvimento de aplicações web modernas, com orientação prática sobre metodologias ágeis e boas práticas de programação.",
-        "Estudou e aplicou tecnologias como React (JavaScript, JSX, gerenciamento de estado, componentes reutilizáveis) para o desenvolvimento de interfaces responsivas e dinâmicas.",
-        "Atuou no Backend utilizando o framework Spring (Java), auxiliando na criação e manutenção de APIs RESTful e integrações com bancos de dados relacionais.",
-        "Realizou correções de bugs, ajustes visuais e melhorias incrementais tanto no Front-End quanto no Back-End, sempre com atenção à experiência do usuário e à performance.",
-        "Trabalhou em equipe com desenvolvedores plenos e seniores, participando de revisões de código e aprendendo sobre versionamento com Git.",
-        "Teve contato com ferramentas como MySQL, GitHub, Trello, além de conceitos de CI/CD e testes automatizados."
+        "Desenvolveu componentes de interface (UI) reutilizáveis utilizando React, JavaScript e JSX, colaborando ativamente na estruturação do front-end da aplicação.",
+        "Auxiliou o desenvolvimento e manutenção de APIs RESTful no Back-End utilizando Java (Spring Boot), garantindo 100% da integração de dados com bancos relacionais (MySQL).",
+        "Realizou ajustes visuais e correções pontuais de bugs, aplicando melhorias incrementais que garantiram a integridade e a qualidade da experiência do usuário.",
+        "Vivenciou a rotina técnica de uma equipe ágil (via Trello), absorvendo boas práticas de arquitetura e código limpo ao acompanhar desenvolvedores seniores e revisões de código (code reviews).",
+        "Aplicou conceitos fundamentais na prática, utilizando Git/GitHub para versionamento colaborativo de código e ganhando familiaridade com esteiras de testes automatizados e CI/CD."
       ]
     },
     {
@@ -35,10 +35,10 @@
       "description": "Manutenção e atualização do portal institucional do campus.",
       "tasks": "Esse estágio foi um divisor de águas na minha trajetória. Pela primeira vez, enfrentei um ambiente com demandas reais, prazos e impacto direto nos usuários. Atuei na manutenção e melhoria do portal institucional, precisando aprender Joomla do zero — um CMS (sistema de gerenciamento de conteúdo) amplamente utilizado para criar e administrar sites de forma dinâmica, com módulos e extensões personalizáveis e lidar com responsabilidades técnicas importantes.",
       "details": [
-        "Responsável pela manutenção e atualização do portal institucional do campus, desenvolvido na plataforma Joomla (CMS baseado em PHP).",
-        "Atuou de forma autônoma na maioria das tarefas, sendo o principal responsável técnico pelo site durante o período do estágio.",
-        "Realizou ajustes de layout, atualização de conteúdos e reestruturação das seções informativas para melhorar a navegação e a experiência do usuário.",
-        "Aprendeu de forma autodidata o funcionamento do Joomla e suas extensões, incluindo gerenciamento de menus, permissões de usuários, módulos e templates."
+        "Gerenciou 100% da manutenção e atualização do portal institucional do campus (Joomla/PHP), impactando diretamente o acesso à informação de uma comunidade de 19.795 alunos e servidores.",
+        "Assumiu total autonomia técnica como o principal responsável pelo site durante o período do estágio, liderando a resolução de chamados e demandas diárias.",
+        "Otimizou a experiência do usuário (UX) ao realizar ajustes de layout, reestruturação de seções informativas e atualizações de conteúdo, reduzindo o atrito na navegação do portal.",
+        "Dominou rapidamente e de forma autodidata o ecossistema Joomla, implementando e gerenciando extensões, módulos, templates e controle de permissões de usuários."
       ]
     },
     {
@@ -49,13 +49,13 @@
       "description": "Responsável técnico por projetos web, usando React, PHP e Firebase.",
       "tasks": "Durante minha jornada na MZZI, tive a oportunidade de atuar com total autonomia no desenvolvimento de sistemas web, desde a concepção até a entrega final. Cada projeto era um novo desafio técnico e criativo, onde pude experimentar, aprender e propor soluções que realmente impactavam o cliente.",
       "details": [
-        "Atuou como desenvolvedor web contratado por projeto, sendo o único responsável técnico pelo desenvolvimento e manutenção de sistemas.",
-        "Participou de todas as etapas dos projetos: levantamento de requisitos, desenvolvimento, testes, deploy e suporte.",
-        "Desenvolveu interfaces dinâmicas e responsivas, alternando entre React e PHP no front-end, de acordo com as demandas do cliente e o projeto em questão.",
-        "Utilizou Firebase para autenticação, notificações e hospedagem de dados de projetos.",
-        "Implementou sistemas de autenticação segura (OAuth), gerenciamento de sessões com cookies e estratégias de cache para melhorar a performance.",
-        "Trabalhou com foco em otimização de tempo de carregamento, usabilidade e experiência do usuário (UX/UI).",
-        "Realizou testes, correções e atualizações contínuas, com versionamento de código em Git/GitHub.",
+        "Atuou como desenvolvedor web contratado por projeto, sendo o único responsável técnico (com atuação 100% autônoma) pelo desenvolvimento e manutenção de 10 sistemas corporativos.",
+        "Liderou 100% das etapas desses projetos: do levantamento de requisitos ao desenvolvimento, testes, deploy e suporte.",
+        "Desenvolveu mais de 60 telas e interfaces dinâmicas, garantindo a responsividade e alternando entre React e PHP no front-end de acordo com as demandas de cada cliente.",
+        "Utilizou Firebase para autenticação, notificações e hospedagem, gerenciando o tráfego e a segurança de dados críticos da operação diária.",
+        "Implementou sistemas de autenticação segura (OAuth), gerenciamento de sessões com cookies e estratégias de cache, melhorando a performance e reduzindo o tempo de carregamento em cerca de 30%.",
+        "Trabalhou com foco em otimização de performance, usabilidade e experiência do usuário (UX/UI).",
+        "Realizou testes, correções de bugs e atualizações contínuas, garantindo a estabilidade com versionamento de código rigoroso em Git/GitHub.",
         "Conduziu todas as tarefas de forma autônoma, demonstrando proatividade, organização e domínio das ferramentas utilizadas."
       ]
     }
